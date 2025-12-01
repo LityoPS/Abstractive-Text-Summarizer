@@ -1,0 +1,25 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "api_server.py",
+            "use": "@vercel/python",
+            "config": {
+                "maxLambdaSize": "50mb"
+            }
+        }
+    ],
+    "routes": [
+        {
+            "src": "/summarize",
+            "dest": "api_server.py"
+        },
+        {
+            "src": "/health",
+            "dest": "api_server.py"
+        }
+    ],
+    "env": {
+        "FRONTEND_URL": "https://your-vercel-app.vercel.app"
+    }
+}
