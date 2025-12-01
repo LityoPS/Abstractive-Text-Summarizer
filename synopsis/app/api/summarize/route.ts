@@ -82,8 +82,9 @@ export async function POST(request: NextRequest) {
                 );
             }
 
+            // Return specific error from HF
             return NextResponse.json(
-                { error: 'Failed to generate summary from Hugging Face API' },
+                { error: `Hugging Face API Error: ${errorText}` },
                 { status: hfResponse.status }
             );
         }
