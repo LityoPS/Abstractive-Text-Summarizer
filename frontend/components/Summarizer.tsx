@@ -9,12 +9,12 @@ import { TextMetadata } from "./Summarizer-Components/TextMetadata";
 
 import { useHistory } from "@/hooks/useHistory";
 
-type SummaryStyle = 'harsh' | 'balanced' | 'detailed';
+type SummaryStyle = 'harsh' | 'standard' | 'detailed';
 
 export const Summarizer = () => {
     const [inputText, setInputText] = useState("");
     const [summary, setSummary] = useState("");
-    const [selectedStyle, setSelectedStyle] = useState<SummaryStyle>('balanced');
+    const [selectedStyle, setSelectedStyle] = useState<SummaryStyle>('standard');
     const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState<string | null>(null);
     const summaryRef = useRef<HTMLDivElement>(null);

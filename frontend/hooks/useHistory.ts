@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 export interface HistoryItem {
     id: string;
     inputText: string;
-    style: 'harsh' | 'balanced' | 'detailed';
+    style: 'harsh' | 'standard' | 'detailed';
     summary: string;
     date: string;
 }

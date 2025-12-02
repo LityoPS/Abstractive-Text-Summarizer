@@ -1,5 +1,5 @@
 interface SummaryStyleButtonProps {
-    style: 'harsh' | 'balanced' | 'detailed';
+    style: 'harsh' | 'standard' | 'detailed';
     selected: boolean;
     onClick: () => void;
 }
@@ -14,8 +14,8 @@ const styleConfig = {
         selectedHover: 'hover:bg-red-700 dark:hover:bg-red-500',
         textColor: 'text-white'
     },
-    balanced: {
-        label: 'Balanced',
+    standard: {
+        label: 'Standard',
         tooltip: 'Medium - Perfect balance of detail and brevity',
         selectedBg: 'bg-yellow-600 dark:bg-yellow-400',
         selectedHover: 'hover:bg-yellow-700 dark:hover:bg-yellow-500',

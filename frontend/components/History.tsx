@@ -26,13 +26,13 @@ function getStyleBadge(style: HistoryItem['style']) {
           Detailed
         </Badge>
       );
-    case 'balanced':
+    case 'standard':
       return (
         <Badge
           variant="outline"
           className="border-0 bg-yellow-500/15 text-yellow-700 dark:bg-yellow-500/10 dark:text-yellow-400"
         >
-          Balanced
+          Standard
         </Badge>
       );
     case 'harsh':
