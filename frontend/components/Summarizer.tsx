@@ -103,7 +103,7 @@ export const Summarizer = () => {
                         <div className="flex items-center justify-center gap-2 md:gap-3">
                             <div className="w-4 h-4 md:w-5 md:h-5 border-2 border-amber-500 border-t-transparent rounded-full animate-spin"></div>
                             <p className="text-amber-700 dark:text-amber-400 text-center font-medium text-xs md:text-base">
-                                Loading AI model... This may take a minute on first load.
+                                Loading AI Model...
                             </p>
                         </div>
                     </div>
@@ -112,7 +112,7 @@ export const Summarizer = () => {
                 {modelStatus === 'error' && (
                     <div className="p-2 md:p-3 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg">
                         <p className="text-red-700 dark:text-red-400 text-center font-medium text-xs md:text-base">
-                            Unable to connect to the summarization service. Please ensure the backend is running.
+                            Unable to connect to the summarization service
                         </p>
                     </div>
                 )}
